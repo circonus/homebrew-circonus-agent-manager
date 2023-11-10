@@ -5,13 +5,13 @@
 class CirconusAm < Formula
   desc "Circonus Agent Manager"
   homepage "https://circonus.com"
-  version "0.2.13"
+  version "0.2.14"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/circonus/agent-manager/releases/download/v0.2.13/circonus-am_0.2.13_darwin_arm64.tar.gz"
-      sha256 "89c9c1180d6abca05f9c43c0533187a27f840f37a26a52ef686bafdd565d9768"
+      url "https://github.com/circonus/agent-manager/releases/download/v0.2.14/circonus-am_0.2.14_darwin_arm64.tar.gz"
+      sha256 "ac7535b3ec1efd93efe307e530cae554b65dda1b70e6da80dfd867a75891f482"
 
       def install
         sbin.install "sbin/circonus-am"
@@ -20,8 +20,8 @@ class CirconusAm < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/circonus/agent-manager/releases/download/v0.2.13/circonus-am_0.2.13_darwin_amd64.tar.gz"
-      sha256 "372f01a402e0f686d60ea530da5d5fe7824b87afecfe8e6fa936004d0d03966a"
+      url "https://github.com/circonus/agent-manager/releases/download/v0.2.14/circonus-am_0.2.14_darwin_amd64.tar.gz"
+      sha256 "5eae86fe78cd046a167a6d854d4a773aad7f76c1cb21d539674e5d8fb83e9c57"
 
       def install
         sbin.install "sbin/circonus-am"
@@ -33,8 +33,8 @@ class CirconusAm < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/circonus/agent-manager/releases/download/v0.2.13/circonus-am_0.2.13_linux_arm64.tar.gz"
-      sha256 "b2a8b0f5931665de583fabf647238c9a21c4c4ac142c25f90fbff5ea45754cea"
+      url "https://github.com/circonus/agent-manager/releases/download/v0.2.14/circonus-am_0.2.14_linux_arm64.tar.gz"
+      sha256 "9663101def2fbdf57f3f0ab963fd567ed79eb2a7f02eed3d420fc2922e304502"
 
       def install
         sbin.install "sbin/circonus-am"
@@ -43,8 +43,8 @@ class CirconusAm < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/circonus/agent-manager/releases/download/v0.2.13/circonus-am_0.2.13_linux_amd64.tar.gz"
-      sha256 "147561ac0ae5a172d304bd3f79d0c2c08b0be2abdaf527d27311652cbad9cbe9"
+      url "https://github.com/circonus/agent-manager/releases/download/v0.2.14/circonus-am_0.2.14_linux_amd64.tar.gz"
+      sha256 "a940fdef8540ab5f83799e2b37bb347163b48862efdd54ad45788a83011745c4"
 
       def install
         sbin.install "sbin/circonus-am"
